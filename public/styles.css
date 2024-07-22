@@ -1,0 +1,279 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* Light text color */
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndAYXeE1TGtJluAOwTAaRDk3OTguzZsNUDw&s") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Darker header with transparency */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+header nav ul li:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+#logout-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    color: #ffd700;
+    background-color: #555; /* Slightly darker background on hover */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background to improve readability */
+}
+
+.content {
+    text-align: center;
+    width: 200%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f9f9f9; /* Darker heading */
+}
+
+/* Updated styles for product list container */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.product, .cart-item {
+    background-color: #2a2a2a; /* Darker background for product items */
+    border-radius: 12px;
+    border: 1px solid #444;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.product:hover, .cart-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.product img, .cart-item img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.product h3, .cart-item h3 {
+    font-size: 1.8em;
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.product p, .cart-item p {
+    font-size: 1.2em;
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.product button, .cart-item button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.product button:hover, .cart-item button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2a2a; /* Darker form background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.login-image {
+    flex: 1;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+form label {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Cart item styles */
+.cart-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cart-item p {
+    font-size: 1em;
+    color: #888;
+}
+
+#checkoutButton {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+#checkoutButton:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product, .cart-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product, .cart-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .product img {
+        max-width: 100px;
+    }
+    
+    .add-to-cart-btn, .remove-from-cart-btn {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .add-to-cart-btn:hover, .remove-from-cart-btn:hover {
+        background-color: #45a049; /* Darker green */
+    }
+    
+    header nav ul li {
+        margin: 20px 0;
+    }
+}
