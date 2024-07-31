@@ -36,7 +36,6 @@ class ECommerceTests(unittest.TestCase):
             if row['Test Case'] == test_case:
                 self.driver.get(row['URL'])
                 wait = WebDriverWait(self.driver, 10)
-                
                 if pd.notna(row['Name']):
                     wait.until(EC.presence_of_element_located((By.ID, "name"))).send_keys(row['Name'])
                 if pd.notna(row['Email']):
@@ -50,6 +49,9 @@ class ECommerceTests(unittest.TestCase):
                 alert_text = self.handle_unexpected_alert()
                 result = {
                     'Test Case': test_case,
+                    'Name': row['Name'],
+                    'Emailid':row['Email'],
+                    'Password':row['Password'],
                     'Expected Alert': row['Expected Alert'],
                     'Actual Alert': alert_text,
                     'Result': 'Pass' if alert_text == row['Expected Alert'] else 'Fail'
@@ -63,6 +65,9 @@ class ECommerceTests(unittest.TestCase):
     def test_02_user_login_success(self):
         self.run_test('user_login_success')
 
+    def test_03_user_login_invalid_password(self):
+        self.run_test('user_login_invalid_password')
+
     def test_04_user_login_notfound(self):
         self.run_test('user_login_notfound')
 
@@ -72,6 +77,13 @@ class ECommerceTests(unittest.TestCase):
     def test_06_user_registration_empty_name(self):
         self.run_test('user_registration_empty_name')
 
+    def test_07_user_registration_success1(self):
+        self.run_test('user_registration_success1')
+
+    def test_08_user_login_invalid_password1(self):
+        self.run_test('user_login_invalid_password1')
+    def test_09_user_login_invalid_password1(self):
+        self.run_test('user_login_invalid_password2')
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
