@@ -82,8 +82,10 @@ class ECommerceTests(unittest.TestCase):
 
     def test_08_user_login_invalid_password1(self):
         self.run_test('user_login_invalid_password1')
-    def test_09_user_login_invalid_password1(self):
+
+    def test_09_user_login_invalid_password2(self):
         self.run_test('user_login_invalid_password2')
+
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()

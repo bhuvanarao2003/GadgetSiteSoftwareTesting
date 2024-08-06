@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "6686fc172f7e33f7e97d0c23"
+  },
+  "name": "bhuvana",
+  "email": "bhuvanarao2003@gmail.com",
+  "password": "$2a$10$N3tQopJ45K6E/zKdvDnq9uL9d4F7qSvE4Qft1Ms.pb2Tasgv57DHW",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6686fdb3c57ba396246d51bf"
+  },
+  "name": "meghana",
+  "email": "meghana@gmail.com",
+  "password": "$2a$10$hUjFIcSv/57EGKU/dOv0v.rVjjXzngL.GdZIxxGi22X1CqKEACMV2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687003bac4e409e8ba690ae"
+  },
+  "name": "gouthami",
+  "email": "gouthami@gmail.com",
+  "password": "$2a$10$gQKkD8BtevNfxSgS3xl32egeRa3RwHlMu/f9wD3VriHKcp4N4.zt6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687051f307b310a5a2c0ac8"
+  },
+  "name": "anushree",
+  "email": "anushree@gmail.com",
+  "password": "$2a$10$8NiN7VyZn4eBq.69Vr9tO.fLfefLRNUdR8O.qev3hH1usE08hFW9O",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66898bb6eddecabe2899c0c4"
+  },
+  "name": "simba",
+  "email": "simba@example.com",
+  "password": "$2a$10$AkTHBIbJuKdldfzgSgHhZe3VoYhW2eCcsaHaVsrGM.M1bII2Y1j0e",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668f9e60a168a6c0106c04cb"
+  },
+  "name": "radha",
+  "email": "radha67@gmail.com",
+  "password": "$2a$10$Bwu8pvt8p9wY044ofMsr0O7Ak6JFANsjAjKmdKTH8gYVXEaAY4djC",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6692321742d889df68eead0f"
+  },
+  "name": "harish123",
+  "email": "harish123@gmail.com",
+  "password": "$2a$10$tGzX.d4iS8iRg8sQTQ4GCOyaqjuf2N6BPhv/qXOE2sVNiATI3DIEi",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6694c67285dc41be6e5adf47"
+  },
+  "name": "sadhana1",
+  "email": "sadhana@gmail.com",
+  "password": "$2a$10$ktbgjHaK6iHtkVk9gG02yuGEvTTdRmvOSjztaX/gToI5c3iucjfSC",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a68c78c6e9f45c9f37edee"
+  },
+  "name": "sania",
+  "email": "",
+  "password": "$2a$10$2jK0MXJmI4RrRxO2cbtNnun7TrjFSnmQtqgTzNpJ8JgfQJ74tI5N2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab15a906caa759c3ac1910"
+  },
+  "name": "gowri1",
+  "email": "gowri1@gmail.com",
+  "password": "$2a$10$PlFhNnk2t1rUER6V1mw4gehXvOCR.bjrOjQ36Vjd7y91X7esbUQs6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab15be06caa759c3ac192c"
+  },
+  "name": "abhiiii",
+  "email": "abhiiii@gmail.com",
+  "password": "$2a$10$MBr8V6RJIBag1CplN.Hq0.teZt2V9GXAHtn.UVNOGqptyXUym9zZy",
+  "__v": 0
+}]
