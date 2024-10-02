@@ -5,13 +5,25 @@ body {
     padding:0;
     background-color: #1a1a1a; /* Dark background */
     color: #ffffff; /* Light text color */
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndAYXeE1TGtJluAOwTAaRDk3OTguzZsNUDw&s") no-repeat center center fixed;
-    background-size: cover;
+    background: url("https://wallpapercave.com/wp/wp3537557.jpg");
+    background-repeat: repeat;
+  
+}
+.container {
+    max-width: 700px;
+    margin: 30px;
+    padding: 50px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: rgba(51, 51, 51, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    text-align: justify;
 }
 
 /* Header */
 header {
-    background-color: rgba(51, 51, 51, 0.8); /* Darker header with transparency */
+    background-color: rgba(51, 51, 51, 0.9); /* Darker header with transparency */
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -23,7 +35,19 @@ header {
     align-items: center;
     position: relative;
 }
-
+footer{
+    background-color: rgba(51, 51, 51, 0.9); /* Darker header with transparency */
+    color: white;
+    padding: 8px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    bottom:auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 header nav ul {
     list-style: none;
     padding: 0;
@@ -51,26 +75,8 @@ header nav ul li a:hover {
     color: #ffd700;
 }
 
-#logout-button {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    background-color: transparent;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
 
-#logout-button:hover {
-    color: #ffd700;
-    background-color: #555; /* Slightly darker background on hover */
-}
+
 
 /* Main content */
 main {
@@ -161,18 +167,13 @@ form {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 1000px;
+    max-width: 400px;
     margin: 30px auto;
-}
-.login-image {
-    flex: 1;
 }
 
 .login-image img {
-    max-width: 100%;
-    height: auto;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    width: 95%;
+    
 }
 
 form label {
@@ -184,7 +185,7 @@ form label {
 form input {
     padding: 10px;
     margin: 10px 0;
-    width: 100%;
+    width: 95%;
     border: 1px solid #444;
     border-radius: 8px;
     background-color: #333;
@@ -276,4 +277,10 @@ form button:hover {
     header nav ul li {
         margin: 20px 0;
     }
+}
+a {
+    color: rgb(57, 110, 160);
+}
+a:hover{
+    color: #007bff;
 }

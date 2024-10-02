@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+    if (window.location.pathname === '/Home.html' || window.location.pathname === '/') {
         fetchProducts();
     } else if (window.location.pathname === '/cart.html') {
         fetchCartItems();
@@ -135,8 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'cart-item';
                 itemDiv.innerHTML = `
+                
                     <h3>${item.productId.name}</h3>
                     <p>Quantity: ${item.quantity}</p>
+                    <img src=${item.productId.image}/>
                     <p>Price: $${(item.quantity * item.productId.price).toFixed(2)}</p>
                     <button class="remove-from-cart-btn" data-cart-item-id="${item._id}">Remove</button>
                 `;

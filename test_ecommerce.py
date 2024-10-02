@@ -4,16 +4,16 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
-
 class ECommerceTests(unittest.TestCase):
-
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome()
+        cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         cls.driver.maximize_window()
         cls.driver.implicitly_wait(5)
-        cls.test_data = pd.read_excel("test_cases.xlsx")  # Load test data from Excel file
+        cls.test_data = pd.read_excel("test_cases.xlsx")
         cls.results = []
 
     def setUp(self):
